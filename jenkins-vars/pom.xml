@@ -24,7 +24,7 @@
         </dependency>
         <dependency>
             <groupId>com.superkats.pipes</groupId>
-            <artifactId>jenkins-proj</artifactId>
+            <artifactId>jenkins-scripts</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -35,40 +35,6 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.gmavenplus</groupId>
-                <artifactId>gmavenplus-plugin</artifactId>
-                <version>1.6</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>compile</goal>
-                            <goal>compileTests</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <sources>
-                        <source>
-                            <directory>${project.basedir}/vars</directory>
-                            <includes>
-                                <include>**/*.groovy</include>
-                            </includes>
-                        </source>
-                    </sources>
-                    <testSources>
-                        <testSource>
-                            <directory>${project.basedir}/test</directory>
-                            <includes>
-                                <include>**/*.groovy</include>
-                            </includes>
-                        </testSource>
-                    </testSources>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+
 
 </project>
