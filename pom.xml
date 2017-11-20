@@ -13,7 +13,6 @@
     </properties>
     <modules>
         <module>jenkins-scripts</module>
-        <module>jenkins-vars</module>
     </modules>
     <dependencyManagement>
         <dependencies>
