@@ -4,6 +4,6 @@ class YallaRunner {
 
    static yalla(Object _pipe,Object projectDefs){
        _pipe.echo "${projectDefs}"
-       _pipe.printColor("blue","${_pipe.BRANCH_NAME}")
+       _pipe.printColor("blue","${_pipe.scm.BRANCH_NAME}")
    }
 }
